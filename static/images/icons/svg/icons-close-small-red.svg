@@ -1,0 +1,5 @@
+<svg id="icons_close_small_red" data-name="icons/close/small/red" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="bounds" width="20" height="20" fill="none"/>
+  <path id="line" d="M0,0,5.657,5.657" transform="translate(7 7)" fill="none" stroke="#f62f5e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="line-2" data-name="line" d="M0,0-5.657,5.657" transform="translate(12.657 7)" fill="none" stroke="#f62f5e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+</svg>

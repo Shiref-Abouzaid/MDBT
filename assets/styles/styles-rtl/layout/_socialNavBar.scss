@@ -1,0 +1,184 @@
+.social-nav-bar {
+    padding: 1.6rem  0;
+    background-color: #FFF;
+    .bg-dark {
+        background-color: #000!important;
+    }
+    .sidebar-btn {
+        button {
+            background-color: $color-grey-light-4;
+            border-radius: 2rem;
+            padding:.8rem;
+            &:active, &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .social-nav-icons-container {
+            flex-wrap: nowrap!important;
+            .sidebar-btn {
+                padding: 0;
+            }
+            .social-nav-item {
+                padding: 0 0.2rem;
+                a {
+                    padding: .5rem;
+                    white-space:pre-wrap;
+      
+                    height: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    .badge {
+                        position:absolute;
+                        right: 0;
+                        top:0;
+                    }
+                    span {
+                        display: block;
+                        font-size: .7rem;
+                    }
+                    img {
+                        margin: 0;
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .social-nav-item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+        a {
+            padding:.8rem 1.2rem;
+            background-color:$color-grey-light-4;
+            width: 100%;
+            height: 3.5rem;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            white-space: nowrap;
+            img {
+                margin-left: .3rem;
+            }
+            img.active {
+                display: none;
+            }
+
+            .text {
+                font-weight: bold;
+                color:$color-secondary;
+            }
+            .badge {
+                margin-left: .2rem;
+                background-color: $color-red-2;
+                width: 1.2rem;
+                height: 1.2rem;
+                color: $color-white;
+                font-size: .9rem;
+                font-weight: normal;
+                border-radius: 50%;
+            }
+        }
+        a.nuxt-link-exact-active{
+            background-color:$color-primary-opacity-1;
+            img.normal {
+                display: none;
+            }
+            img.active {
+                display: inline-block;
+            }
+            .text {
+                color: $color-primary;
+            }
+        }
+    }
+    .social-side-bar {
+        .b-sidebar {background-color: $color-white!important;}
+        a {
+            color: $color-night;
+            text-decoration: none;
+        }
+        .b-sidebar-header {
+
+            font-size: 2.3rem;
+            position: relative;
+            color: #000;
+            padding-bottom: 2rem;
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 1.8rem;
+                right: 1rem;
+                width: 4rem;
+                height: 4px;
+                background-color: $color-secondary;
+                border-radius: 2rem;
+            }
+        }
+        .close  {
+            background-color: $color-secondary;
+            opacity: 1;
+            color: #FFF !important;
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: 0 !important;
+            &:active, &:focus {
+                box-shadow: none;
+                border: none;
+            }
+        }
+        .collapse-header {
+            align-items: center;
+            border-top: 1px solid #E5E5E5;
+            padding: .8rem 1.5rem;
+            span {
+                padding-right: 1rem;
+            }
+            .icon {
+                width:2rem;
+            }
+            .arrow {
+                margin-right: auto;
+                width: 0.5rem;
+                transform: rotate(180deg);
+            }
+
+        }
+        .not-collapsed {
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+        .collapse  {
+            background-color: $color-grey-light;
+        }
+        .single-dropdown {
+            padding-right: 4rem;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            border-top: 1px solid  #E5E5E5;
+
+            span {
+                padding-left: 1rem;
+                padding-top: .4rem;
+            }
+            img {
+                width:1.5rem;
+            }
+            a {
+                color: $color-night;
+                text-decoration: none;
+            }
+        }
+    }
+}

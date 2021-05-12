@@ -1,0 +1,32 @@
+.arrow-secondary {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: rgba($color-black, $alpha: .6);
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 6px;
+        
+        img {
+            height: 1.5rem;
+        }
+
+        &.swiper-button-disabled {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: "";
+    }
+
+}

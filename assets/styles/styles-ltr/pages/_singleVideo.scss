@@ -1,0 +1,218 @@
+.single-video-page {
+    padding-bottom: 2rem;
+    @media (max-width: 991px) {
+        .container {
+            padding:0
+        }
+    }  
+    .single-video-page-container {
+        background-color: #FFF;
+        padding: 1.5rem;
+        .title {
+            font-size: 2rem;
+            margin: 0;
+            color: $color-night;
+        }
+
+        .video-side {
+            .box {
+                margin-top: 2rem;
+                @media (max-width: 991px) {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }  
+                video {
+                    height: 100%;
+                }
+                .the-frame {
+                    border-radius: 0.5rem;
+                    height: 30.1rem;
+                    @media (max-width: 991px) {
+                        height: 100%;
+                    }  
+                }
+            }
+        }
+        .info-side {
+            .channle-info {
+                img {
+                    width: 2.2rem;
+                    height:2.2rem;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    object-position: center;
+                    object-fit: cover;
+                }
+                .channle-name {
+                    color: $color-night;
+                    font-size: 1.1rem;
+                }
+                .date {
+                    color: #afafaf;
+                    font-size: 0.8rem;
+                }
+                
+            }
+            .description {
+                color: $color-night;
+            }
+            .views-and-comments-count {
+                color:#afafaf;
+                font-size: 0.75rem;
+                img {
+                    margin-right: 0.5rem;
+                }
+            }
+            .title-comments {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: $color-night;
+                padding: 0.8rem 0 ;
+                border-bottom: 1px solid #ccc;
+            }
+            .comments-box {
+                height: 17rem;
+                overflow-x: auto;
+                .my-edit-edit {
+                    margin-left: auto;
+                    margin-right: .5rem;
+                }
+                .single-comment {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    .comment-user-img img {
+                        width:2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        margin-right: 0.5rem;
+                    }
+                    .comment-name {
+                        color: $color-night;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        margin-right: 0.5rem;
+                    }
+                    .commen-content {
+                        color: $color-night;
+                        margin: 0;
+                        font-size: 0.9rem;
+                    }
+                    .comment-date {
+                        color: #909090;
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+            .input-comment-box {
+                background-color: #F5F5F5 ;
+                border-radius: 0.5rem;
+
+                .current-user-img {
+                    .user {
+                        width:2.5rem;
+                        height: 2.5rem;
+                        object-position: center;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+                        margin-right: 0.3rem;
+                    }
+                    .icon {
+                        margin-right: 0.3rem;
+                    }
+
+                }
+                .input-comment {
+                    background-color: #F5F5F5;
+                    border:none;
+                    padding-left: .5rem;
+                }
+            }
+        }
+
+        .related-videos {
+            .title-related {
+                font-size: 1.8rem;
+                color: $color-night;
+                padding-top: 2rem;
+                font-weight: bold;
+            }
+            .single-video-card {
+                box-shadow: 0px 2px 8px #00000022;
+                border-radius: 0.6rem;
+                overflow: hidden;
+                margin-top: 2rem;
+                a {
+                    text-decoration: none;
+                }
+                .video {
+                    position: relative;
+                    .embed-responsive {
+                        height: 12rem;
+                        video {
+                            width:100%!important
+                        }
+                    }
+                    .embed-responsive .embed-responsive-item {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    .duration {
+                        background-color: #000;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        padding: .2rem .6rem;
+                        font-size: .75rem;
+                        color: #FFF;
+                    }
+                }
+            
+                .info {
+
+                    padding: 1rem;
+                    .title {
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: $color-night;
+                        margin: 0;
+                        height: 1.2rem;
+                        overflow: hidden;
+                    }
+                    .channel {
+                        align-items: center;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        img {
+                            width: 1.8rem;
+                            height: 1.8rem;
+                            border-radius: 50%;
+                            margin-right: .3rem;
+                        }
+                        .channel-name {
+                            margin:0;
+                            font-size: 0.8rem;
+                            color: $color-night;
+
+                        }
+                    }
+                    .views {
+                        .box {
+                            justify-content: center;
+                            font-size: .7rem;
+                            color: #AFAFAF;
+                            img {
+                                margin-right: .5rem;
+                            }
+                            span {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}

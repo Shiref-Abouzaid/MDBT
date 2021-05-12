@@ -1,0 +1,18 @@
+.offer {
+    position: relative;
+
+    .offer-img {
+        border-radius: 6px;
+        width: 450px;
+    }
+
+    .vendor-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: .8rem .7rem;
+        background-color: $color-white;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.13);
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,242 @@
+.auction-page {
+    padding-bottom: 2rem;
+
+    h3 {
+        font-weight: 600;
+        letter-spacing: .5px;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .about {
+        background-color: $color-white;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+
+        p {
+            margin-bottom: 0;
+            font-size: .9rem;
+            font-weight: 100;
+        }
+    }
+
+    .details {
+        background-color: $color-white;
+        padding: 1rem 1rem 1.5rem;
+
+        .time {
+            margin-top: 2rem;
+
+            .col-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $color-white;
+
+                .num {
+                    width: 50px;
+                    height: 50px;
+                    // background-color: red;
+                    background-color: $color-secondary;
+                    color: $color-third;
+                    border-radius: 50%;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    margin-top: .5rem;
+                    color: $color-primary;
+                }
+
+            }
+
+        }
+
+        .current-bid {
+            margin-top: 1.5rem;
+            text-align: center;
+
+            .text {
+                color: #767676;
+                font-size: 1.1rem;
+            }
+
+            .price {
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-left: .5rem;
+            }
+        }
+    }
+
+    .ended {
+        background-color: $color-white;
+        padding: 1rem 1rem 1.5rem;
+
+        h5 {
+            margin-top: 2rem;
+            color: #ff0000;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+
+            span {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            span.name {
+                color: $color-secondary;
+            }
+
+            span.price {
+                color: $color-primary
+            }
+        }
+    }
+
+    .offer, .deal {
+        background-color: $color-white;
+        padding: 1rem 1rem 1.5rem;
+        margin-top: 1.5rem;
+
+        .head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            img {
+                margin-left: 1rem;
+            }
+        }
+
+        .form-control {
+            font-size: 1rem;
+            padding: 1.4rem 1rem;
+
+            &::placeholder {
+                font-size: 1rem;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border: 1px solid #ced4da;
+            }
+        }
+
+        .submit-btn {
+
+            .btn {
+                width: 100%;
+                background-color: $color-primary;
+                color: $color-white;
+                padding: .5rem 0;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .auction-deals {
+        background-color: $color-white;
+        margin-top: 1.5rem;
+        padding: 1rem 1rem 1.5rem;
+
+        .auction-deal {
+            padding: 1rem;
+            background-color: $color-secondary;
+            color: $color-white;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+
+            h6 {
+                font-weight: 600;
+                letter-spacing: .5px;
+            }
+
+            .actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 2rem;
+                margin-top: 1.5rem;
+
+                .btn {
+                    width: 3.5rem;
+                    height: 2rem;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $color-white;
+                }
+
+                .no {
+                    background-color: #FF0000;
+                }
+
+                .yes {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+
+    .auction-data {
+        background-color: $color-white;
+        padding-bottom: 1rem;
+        margin-top: 1.5rem;
+
+        .tabs {
+
+            .nav-tabs {
+                border: none;
+                .nav-item {
+                    width: 50%;
+                    text-align: center;
+
+                    .nav-link:link,
+                    .nav-link:visited {
+                        border: none;
+                        color: $color-secondary;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        border: 1px solid $color-secondary;
+                        border-radius: 0;
+
+                        &.active {
+                            background-color: $color-secondary;
+                            color: $color-white;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            margin-top: 1rem;
+
+            .price {
+                color: $color-primary;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+}

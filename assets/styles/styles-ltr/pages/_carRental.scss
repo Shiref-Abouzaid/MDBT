@@ -1,0 +1,89 @@
+.car-rental-page {
+    padding-bottom: 2rem;
+    @media (max-width: 991px) {
+        .container {padding:0}
+    }
+    .cat-slider {
+
+        .main-medical {
+            position: relative;
+        }
+    
+        .doctors-specialities {
+            position: relative;
+            width: 85%;
+            margin: 0rem auto;
+            margin-top: 2rem;
+    
+            .cat-carousel {
+    
+                .mini-cat a:link,
+                .mini-cat a:visited {
+                    color: $color-secondary;
+                    border: 1px solid $color-secondary;
+                    padding: .3rem 1.2rem;
+                }
+    
+                .mini-cat a:hover {
+                    background-color: $color-secondary;
+                    /* border: 1px solid var(--color-primary); */
+                    border: 1px solid $color-secondary;
+                    color: $color-white
+                }
+    
+                .mini-cat a.nuxt-link-active {
+                  background-color: $color-secondary;
+                  /* border: 1px solid var(--color-primary); */
+                  border: 1px solid $color-secondary;
+                  color: $color-white
+              }
+    
+                .swiper-button-prev,
+                .swiper-button-next {
+    
+                    img {
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+      }
+
+    .cars {
+        background-color: $color-white;
+        margin-top: 2rem;
+        padding: 1.5rem 2rem 3rem;
+        @media (max-width: 991px) {
+            padding: 1rem;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: .5px;
+                font-size: 1.5rem;
+                margin-bottom: 0;
+                @media (max-width: 991px) {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .add-btn {
+
+                .btn {
+                    background-color: $color-secondary;
+                    color: $color-white;
+                    padding: .5rem 2rem;
+                }
+            }
+        }
+
+        .car {
+            margin-top: 2rem;
+        }
+    }
+
+}

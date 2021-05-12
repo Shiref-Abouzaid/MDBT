@@ -1,0 +1,232 @@
+.my-cart {
+  .container {
+    background-color: $color-grey-light;
+    padding: 2rem 0;
+    @media (max-width: 567px) {
+      padding: 0;
+    }
+
+    .cart {
+      background-color: $color-white;
+      padding: 1rem;
+      // margin: 2rem;
+      h3 {
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        @media (max-width: 567px) {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+      }
+
+      .cart-item {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 0.8rem;
+        margin-top: 1.5rem;
+
+        span {
+          color: $color-grey-dark-6;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+
+      .cart-content {
+        margin-top: 1rem;
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .content {
+            display: flex;
+
+            .content-img {
+              border: 1px solid #e5e5e5;
+              margin-right: 1rem;
+              height: 5rem;
+              width: 5rem;
+              padding: .5rem;
+
+              @media (max-width: 567px) {
+                margin-right: 0.5rem;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+
+            .details {
+              p {
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+                font-weight: 100;
+                @media (max-width: 567px) {
+                  margin-bottom: 0;
+                }
+              }
+
+              .bold {
+                // font-weight: 600;
+                // margin-bottom: 0.5rem;
+                // font-size: 0.8rem;
+                a {
+                  text-decoration: none;
+                  font-weight: 600;
+                  margin-bottom: 0.5rem;
+                  font-size: 0.8rem;
+                  color: $color-black;
+
+                  a:link,
+                  a:visited {
+                    color: $color-black;
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              .remove {
+                &:hover {
+                  cursor: pointer;
+                }
+                span {
+                  color: $color-grey-dark-6;
+                  font-size: 0.7rem;
+                }
+              }
+            }
+          }
+
+          .control {
+            display: flex;
+
+            span {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background-color: $color-grey-light-1;
+              @media (max-width: 567px) {
+                width: 1.5rem;
+                height: 1.5rem;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 1rem;
+              }
+
+              &:nth-child(2) {
+                @media (max-width: 567px) {
+                  width: 2.5rem;
+                }
+                width: 3rem;
+                border-radius: 50px;
+                background-color: $color-white;
+                border: 1px solid $color-grey-light-1;
+                font-weight: 600;
+              }
+
+              &:not(:last-child) {
+                margin-right: 0.3rem;
+              }
+            }
+          }
+        }
+
+        .price {
+          font-weight: 600;
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .summery {
+      background-color: $color-white;
+      padding: 1rem 0 0;
+      position: sticky;
+      top: 85px;
+      @media (max-width: 567px) {
+        padding: 1rem;
+      }
+
+      h3 {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 0 1rem;
+        @media (max-width: 567px) {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+      }
+
+      ul {
+        list-style: none;
+        li {
+          padding: 0 1rem;
+
+          .summery-details {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid $color-grey-dark-8;
+
+            .text {
+              color: $color-black;
+              font-weight: 600;
+            }
+            .num {
+              color: $color-secondary;
+              font-weight: 600;
+              font-size: 1.1rem;
+            }
+            .number {
+              color: $color-primary;
+              font-weight: 600;
+              font-size: 1.3rem;
+            }
+
+            a:link,
+            a:visited {
+              color: $color-black;
+              text-decoration: none;
+            }
+          }
+          .end {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .btn-ckeckout {
+        background-color: $color-primary;
+        color: $color-white;
+        width: 100%;
+        padding: 0.8rem;
+        // padding: 1rem 8.7rem;
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        display: block;
+        &:link,
+        &:visited {
+          color: $color-white;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+}

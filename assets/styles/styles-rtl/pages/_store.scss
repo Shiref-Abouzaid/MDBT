@@ -1,0 +1,85 @@
+.store {
+    padding-bottom: 2rem;
+
+    .cat-slider {
+
+        .mini-cat {
+
+            a.nuxt-link-active {
+                background-color: $color-primary;
+                color: $color-white;
+            }
+        }
+    }
+
+    .like, .popular, .vendors {
+        padding: 1.2rem 0 3rem;
+        background-color: $color-white;
+        margin-top: 2rem;
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            h2 {
+                margin-bottom: 0;
+                @media (max-width: 991px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            a:link,
+            a:visited {
+                font-size: 1.2rem;
+                color: $color-primary;
+                text-decoration: underline;
+                letter-spacing: .5px;
+                @media (max-width: 991px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .like, .popular {
+        .products {
+            padding: 0 1.5rem;
+            position: relative;
+
+            .swiper-container {
+                position: unset;
+            }
+
+            .product {
+                padding: 1rem .5rem;
+            }
+        }
+
+        .product-skeleton-loader {
+            padding: 1rem .5rem;
+        }
+    }
+
+    .vendors {
+
+        .popular-vendors {
+            margin-top: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            position: relative;
+
+            .swiper-container {
+                position: unset;
+
+                .swiper-slide {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,491 @@
+
+.social-profile-section {
+    background-color:$color-grey-light;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    @media (max-width: 991px) {
+        padding-top: 0;
+        padding-bottom: 0;
+       .container {padding: 0;}
+    } 
+    .social-my-profile {
+ 
+        .social-main {
+
+            .cover {
+                height: 12rem;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                align-items: flex-end;
+                display: flex;
+                position: relative;
+
+                .edit-profile-cover {
+                    position: absolute;
+                    bottom: 1rem;
+                    right:1.5rem;
+                    @media (max-width: 991px) {
+                        right:0.5rem;
+                        bottom: 4rem;
+                    }  
+                    label {
+                        width:13rem;
+                        padding-top: .7rem;
+                        padding-bottom: .7rem;
+                        color: #FFF;
+                        background-color: rgba(0,0,0,0.54);
+                        border-radius: .5rem;
+                        font-weight: 300;
+                        cursor: pointer;
+                        text-align: center;
+                        @media (max-width: 991px) {
+                            width: 11rem;
+                            font-size: .8rem;
+                            img {
+                                width: 1rem;
+                            }
+                        }  
+                        img {
+                            margin-right: .7rem;
+                        }
+                        span{
+                            vertical-align: middle; 
+                        }
+                        &:active, &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .profile-image {
+                    height:8rem;
+                    border-radius: 50%;
+                    width:8rem;
+                    margin-bottom: -4rem;
+                    margin-left: 1.5rem;
+                    align-items: flex-end;
+                    display: flex;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    @media (max-width: 991px) {
+                        height: 6rem;
+                        width: 6rem;
+                        margin-bottom: -3rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }  
+                    .edit-profile-image {
+                        background-color: $color-night;
+                        height:2rem;
+                        text-align: center;
+                        color:#FFF;
+                        width:100%;
+                        font-weight: 100;
+                        font-size: .9em;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        cursor: pointer;
+                        span {
+                            width:100%;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .social-name-bio {
+                background-color: #FFF;
+
+                padding-top: 4.5rem;
+                padding-left: 1.5rem;
+                padding-bottom: 1rem;
+
+                .info {
+                    @media (max-width: 991px) {
+                        margin-bottom: 1rem;
+                    }
+                    .title {
+                        font-weight: bold;
+                        color: $color-night;
+                        font-size: 2rem;
+                    }
+                    .bio {
+                        resize: none;
+                        overflow: hidden;
+                        transition: padding .3s ease-in-out;
+                        background-color:$color-grey-light-3;
+                        border-color: #e0e0e0;
+                        padding:1.2rem;
+                        border-radius: .5rem;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        &:disabled {
+                            padding:0;
+                            background-color: transparent;
+                            border: none;
+                            padding: 0;
+                        }
+                    }
+                    .bio.no-info {
+                        &:disabled {
+                            height: 0;
+                        }
+                    }
+                }
+                .edit-info-container {
+                  
+                    padding-right: 1.5rem;
+
+                }
+  
+                .message-block-add {
+                    text-align: right;
+                    padding-right: 1rem;
+                    button:focus, button:active {
+                        box-shadow: none;
+                    }
+                    button {
+                        padding-top: .7rem;
+                        padding-bottom: .7rem;
+                        margin-right: .7rem;
+                        margin-right: .7rem;
+
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        span {
+                            position: relative;
+                            top:.15rem
+                        }
+                    }
+                    button.block, button.message {
+                        background-color: $color-grey-light;
+                    }
+                    .add-friend {
+                        background-color:$color-secondary-opacity-1;
+                        color: $color-secondary;
+                        font-weight: bold;
+                        padding-right: 1.5rem;
+                        padding-left: 1.5rem;
+                        img {
+                            margin-right: .7rem;
+                        }
+                    }
+                    .friend-request-sent {
+                        background-color: $color-primary-opacity-1;
+                        color: $color-primary;
+                        font-weight: bold;
+                        padding-right: 1.5rem;
+                        padding-left: 1.5rem;
+                        img {
+                            margin-right: .7rem;
+                        }
+                    }
+                }
+                .edit-info {
+                    margin-left: auto;
+                    color:$color-secondary;
+                    font-weight: bold;
+                    text-align: center;
+                    width:10rem;
+                    padding-top: .7rem;
+                    padding-bottom: .7rem;
+                    background-color:#e7e7ee;
+                    display: flex;
+                    white-space: nowrap;
+                    @media (max-width: 991px) {
+                        margin-top: 1rem;
+                        margin: auto;
+                    }
+                    span {
+                        transition: width .3s ease-in-out;
+                    }
+      
+                    span.show {
+                        transition: width .3s ease-in-out;
+                        flex: 1 1 100%;
+                    }
+                    span.hide {
+                        flex: 2 2 0;
+                        width: 0px;
+                        overflow: hidden;
+                    }
+                    &:focus, &:active {
+                        box-shadow: none;
+                    }
+                    img {
+                        margin-right: .7rem;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                .edit-info.editmodebtn {
+                    background-color: $color-secondary;
+                    @media (max-width: 991px) {
+                        margin-top: 1rem;
+ 
+                    }
+                    color: #FFF;
+                    img {
+                        width: 1px;
+                    }
+
+                }
+            }
+
+            .social-myprofile-about {
+                background-color: $color-white;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 1rem;
+                h2 {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                    color: $color-night;
+                }
+                .info {
+                    margin-bottom: .8rem;
+                    @media (max-width: 991px) { 
+                        display: flex;
+                    }
+                    img {
+                        margin-right: 1.5rem;
+                    }
+                    .info-input {
+                        width: 80%;
+                        display: inline-block;
+                        border:.5px solid #e0e0e0;
+                        background-color: $color-grey-light-3;
+                        color: $color-night;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        transition: padding .3s ease-in-out;
+                        border-radius: 0.5rem;
+                        font-weight: 300;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        &:disabled {
+                            background-color: transparent;
+                            border: none;
+                            padding-left: 0;
+                            padding-top: .5rem;
+                            padding-bottom: .5rem;
+                        }
+                    }
+                    .info-input.no-info {
+                        width:0;
+                        padding:0
+                    }
+                    p {
+                        width: 80%;
+                        display: inline-block;
+                        color: $color-night;
+                        border-radius: 0.5rem;
+                        font-weight: 300;
+                        padding-left: 0;
+                        padding-top: .5rem;
+                        padding-bottom: .5rem;
+                    }
+                }
+            }
+
+            //gallery
+            .social-myprofile-gallery {
+                background-color: $color-white;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 2rem;
+                padding-top: 1rem;
+                h2 {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    margin-bottom: 0;
+                    color: $color-night;
+                }
+                .gallery-img {
+                    height:350px;
+                    width: 100%;
+                    margin-top: 2rem;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: .5rem;
+                }
+                .gallery-img-container {
+
+                    .remove-photo-btn {
+                        border-radius: .5rem;
+                        position: absolute;
+                        top: 2.5rem;
+                        right: 1.5rem;
+
+                        color:$color-red-2;
+                        background-color:rgba(255, 0, 0, 0.1);
+                        transition: opacity .3s ease-in-out;
+                        transform: scaleY(0);
+                        opacity: 0;
+                        button {
+                            vertical-align: middle;
+                            img {
+                                margin-right: .3rem;
+                            }
+                            span {
+                                position: relative;
+                                top:0.15rem;
+                                font-weight: bold;
+                            }
+                            &:hover {
+                                color:$color-red-2;
+                            }
+                            &:focus, &:active {
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    .remove-photo-btn.show {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+                }
+                .add-photo{
+                    border:.15rem dashed $color-primary;
+                    margin-top: 2rem;
+                    width: 100%;
+                    height: 350px;
+                    border-radius:.5rem;
+                    // display: flex;
+                    // align-items: center;
+                    // cursor: pointer;
+
+                    .images {
+                        padding: 0 1rem 1rem 1rem;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .image {
+                            margin-top: 1rem;
+                            position: relative;
+
+                            .gallery-user-img {
+                                width: 100%;
+                                height: 5rem;
+                                border-radius: 8px;
+                                object-fit: cover;
+                            }
+
+                            .icon {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .actions {
+                            margin-top: auto;
+
+                            .btn {
+                                width: 100%;
+                                padding: .5rem 0;
+                            }
+
+                            .publish {
+                                background-color: rgba($color-primary, .2);
+                                color: $color-secondary;
+                            }
+
+                            .cancel {
+                                color: #FF0000;
+                            }
+                        }
+                    }
+
+                    .select-photos {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    span {
+                        display: block;
+                        width:100%;
+                        text-align: center;
+                        color: $color-primary;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+
+                    }
+                }
+            }
+        }
+        .edit-my-profile {
+            color: blue;
+            font-weight: 300;
+        }
+
+    }
+}
+.block-popup {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    cursor: pointer;
+    img {
+        width:1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    span {
+        color: $color-night;
+        position: relative;
+        top: .15rem;
+  
+    }
+}
+.cancel-friend-request-popup {
+    white-space: nowrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    cursor: pointer;
+
+    img {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    span {
+        color: $color-night;
+        position: relative;
+        top: .15rem;
+    }
+
+}
+.social-block-popover {
+    background-color: $color-grey-light;
+    border:none;
+    box-shadow: 0px 0px 4px #0000001D;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .popover-body {
+        min-width: 10rem;
+    }
+    .arrow::before {
+        border-bottom-color:transparent
+    }
+     .arrow::after {
+        border-bottom-color: $color-grey-light;
+        border-width: 0 0.8rem 0.5rem 0.8rem;
+     }
+}

@@ -1,0 +1,47 @@
+.store-vendor {
+    a:link,
+    a:visited {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $color-black;
+    
+        > img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    
+        h4 {
+            margin-top: .5rem;
+        }
+    
+        p {
+            font-size: .8rem;
+            letter-spacing: .5px;
+            font-weight: 100;
+            color: $color-grey-dark;
+            margin-bottom: .5rem;
+        }
+    
+        .rate {
+            color: $color-white;
+            background-color: $color-secondary;
+            padding: .3rem .6rem;
+            border-radius: 4px;
+            font-size: .75rem;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 100;
+    
+            img {
+                margin-left: .5rem;
+                height: .75rem;
+            }
+        }
+    }
+}

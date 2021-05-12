@@ -1,0 +1,268 @@
+.pharmacy-page {
+    padding-bottom: 3rem;
+
+    .vendor-info {
+        padding: 0 0 1rem;
+        background-color: $color-white;
+
+        .cover {
+            position: relative;
+
+            .cover-img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .personal-img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+
+                position: absolute;
+                top: 100%;
+                left: 5%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .info {
+            margin-top: 4.5rem;
+            padding-left: 5%;
+            padding-right: 3rem;
+
+            .head {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    font-size: 1.4rem;
+                    letter-spacing: .5px;
+                    margin-right: 1.5rem;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            p {
+                font-size: .9rem;
+                font-weight: 100;
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .medical-thumbnails {
+            padding-left: 5%;
+            padding-right: 3rem;
+        }
+
+        .contacts {
+            padding: 0 .5rem;
+            margin-top: 3rem;
+
+            .row {
+                align-items: center;
+                margin-top: 1.5rem;
+
+                .col-1 {
+                    text-align: center;
+                }
+            }
+
+            img {
+                height: 1.5rem;
+
+                &.mail {
+                    height: 1rem;
+                }
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                font-weight: 100;
+            }
+        }
+
+    }
+
+    .clinic {
+        padding: 1.5rem 0 2.5rem;
+        background-color: $color-white;
+        margin-top: 1.5rem;
+
+        .head {
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            a:link,
+            a:visited {
+                color: $color-primary;
+                text-decoration: underline;
+            }
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: .5px;
+                margin-bottom: 0;
+            }
+        }
+
+        .appointments {
+            margin-top: 2rem;
+            padding: 0 1.5rem;
+            position: relative;
+
+            .swiper-container {
+                position: unset;
+
+                .swiper-button-next, 
+                .swiper-button-prev {
+                    width: 2.5rem;
+                    height: 2.5rem;
+
+                    img {
+                        height: 1.1rem;
+                    }
+                }
+            }
+
+            .appointment {
+                text-align: center;
+                color: $color-white;
+
+                .info {
+                    background-color: $color-primary;
+                    padding: 1rem 0;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+
+                    p {
+                        margin-bottom: 0;
+
+                        &.day {
+                            font-weight: 600;
+                        }
+
+                        &.time {
+                            font-size: .9rem;
+                        }
+
+                        &.price {
+                            font-weight: 600;
+                            font-size: 1.1rem;
+
+                            span {
+                                font-weight: 400;
+                                font-size: .8rem;
+                            }
+                        }
+
+                        &.time, &.price {
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+
+                .book {
+                    background-color: $color-secondary;
+                    padding: .6rem 0;
+                    font-size: .9rem;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .vendor-products {
+        padding: 1rem 2rem 2.5rem;
+        background-color: $color-white;
+        margin-top: 4rem;
+
+        .head {
+            letter-spacing: 1px;
+            display: flex;
+            align-items: flex-end;
+            .see-more {
+                font-size: 1.2rem;
+                color: #1FAE93;
+                text-decoration: underline;
+                letter-spacing: 0.5px;
+                margin-left: auto;
+            }
+            h3 {
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            span {
+                margin-left: 1.5rem;
+            }
+        }
+
+        .products {
+
+            .product {
+                margin-top: 1.5rem;
+            }
+        }
+
+    }
+
+    .paginator {
+        margin-top: 3rem;
+    }
+
+    .reviews {
+        background-color: $color-white;
+        margin-top: 1rem;
+        padding: 1rem 1.5rem 3rem;
+    }
+
+    .pharm-contacts {
+        padding: .5rem 1.5rem 2rem;
+        background-color: $color-white;
+        position: sticky;
+        top: 85px;
+
+        .contacts {
+            // padding: 0 .5rem;
+    
+            .row {
+                align-items: center;
+                margin-top: 1.5rem;
+    
+                .col-1 {
+                    text-align: center;
+                }
+            }
+    
+            img {
+                height: 1.5rem;
+    
+                &.mail {
+                    height: 1rem;
+                }
+            }
+    
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                // font-weight: 100;
+            }
+        }
+    }
+
+}

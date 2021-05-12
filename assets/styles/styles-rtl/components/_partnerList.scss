@@ -1,0 +1,78 @@
+.partner-list {
+    padding: 1.5rem 0;
+    background-color: $color-white;
+
+    h3 {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .all-partner {
+        display: flex;
+        justify-content: center;
+
+        .service {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-basis: 11%;
+    
+            // .service-content {
+    
+                a:link,
+                a:visited {
+                    color: $color-black;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: .4;
+    
+                
+                .service-img {
+                    background-color: $color-white;
+                    box-shadow: 0 2.5px 15px 0 rgba(36, 36, 36, 0.1);
+                    padding: 1rem;
+                    border-radius: 6px;
+                    transition: all .3s;
+    
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        transition: all .3s;
+                        backface-visibility: hidden;
+                    }
+                }
+    
+                p {
+                    margin-bottom: 0;
+                    margin-top: .5rem;
+                    text-align: center;
+                    // font-size: 2rem;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                    // transition: all .3s;
+                }
+
+                &.nuxt-link-exact-active {
+                    opacity: 1;
+
+                    p {
+                        font-weight: 400;
+                    }
+                }
+    
+                &:hover {
+    
+                    opacity: 1;
+
+                    p {
+                        font-weight: 400;
+                    }
+                }
+    
+            }
+        }
+    }
+
+}

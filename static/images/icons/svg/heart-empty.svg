@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+  <g id="heart" transform="translate(1 1)">
+    <path id="Path" d="M12.92,1.149a3.528,3.528,0,0,0-5.211,0L7,1.905l-.71-.756a3.528,3.528,0,0,0-5.211,0,4.1,4.1,0,0,0,0,5.547l.71.756L7,13l5.211-5.547.71-.756a4.1,4.1,0,0,0,0-5.547Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

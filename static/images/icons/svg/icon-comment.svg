@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icons_comments_black" data-name="icons/comments/black" transform="translate(0 0)">
+    <rect id="bounds" width="20" height="20" fill="none"/>
+    <path id="bubble" d="M7.946,14.643a8.563,8.563,0,0,0,2.432-.349A32.677,32.677,0,0,0,14.033,16a36.678,36.678,0,0,1-.3-3.659,7,7,0,0,0,2.161-5.019C15.891,3.278,12.334,0,7.946,0S0,3.278,0,7.321,3.557,14.643,7.946,14.643Z" transform="translate(2 1)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

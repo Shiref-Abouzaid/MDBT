@@ -1,0 +1,28 @@
+/**
+ * Basic typography style for copy text
+ */
+
+.heading {
+  display: flex;
+  justify-content: center;
+
+  .main-head {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+  
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40%;
+        width: 55%;
+        height: 4px;
+        background-color: $color-primary;
+        border-radius: 10px;
+    }
+  }  
+}

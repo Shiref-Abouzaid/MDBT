@@ -1,0 +1,242 @@
+.doctor-page {
+    padding-bottom: 2rem;
+
+    .doctor-info {
+        padding: 1.5rem 1.5rem;
+        background-color: $color-white;
+        
+        .info {
+            display: flex;
+
+            .doctor-img {
+
+                img {
+                    width: 130px;
+                    height: 130px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+            }
+
+            .title {
+                margin-left: 2rem;
+
+                h4 {
+                    margin-top: 1rem;
+                    letter-spacing: .5px;
+                }
+
+                span {
+                    // font-size: .9rem;
+                    color: $color-primary;
+                }
+            }
+    
+            .rate {
+                margin-left: 2rem;
+                
+                .rate-box {
+                    margin-top: 1rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        p {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            font-size: .9rem;
+            font-weight: 100;
+        }
+    }
+
+    .clinic {
+        padding: 1.5rem 0 2.5rem;
+        background-color: $color-white;
+        margin-top: 1.5rem;
+
+        .head {
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            a:link,
+            a:visited {
+                color: $color-primary;
+                text-decoration: underline;
+            }
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: .5px;
+                margin-bottom: 0;
+            }
+        }
+
+        .clinic-contacts {
+
+            .contacts {
+                padding: 0 1.5rem;
+
+                .contact {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    img {
+                        height: 1.5rem;
+
+                        &.mail {
+                            height: 1.3rem;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        margin-left: 2rem;
+                        letter-spacing: .5px;
+                        font-size: 1.2rem;
+
+                        &.location {
+                            color: $color-secondary-light;
+                        }
+                    }
+                }
+            }
+        }
+
+        .appointments {
+            margin-top: 2rem;
+            padding: 0 1.5rem;
+            position: relative;
+
+            .swiper-container {
+                position: unset;
+
+                .swiper-button-next, 
+                .swiper-button-prev {
+                    width: 2.5rem;
+                    height: 2.5rem;
+
+                    img {
+                        height: 1.1rem;
+                    }
+                }
+            }
+
+            .appointment {
+                text-align: center;
+                color: $color-white;
+
+                .info {
+                    background-color: $color-primary;
+                    padding: 1rem 0;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+
+                    p {
+                        margin-bottom: 0;
+
+                        &.day {
+                            font-weight: 600;
+                        }
+
+                        &.time {
+                            font-size: .9rem;
+                        }
+
+                        &.price {
+                            font-weight: 600;
+                            font-size: 1.1rem;
+
+                            span {
+                                font-weight: 400;
+                                font-size: .8rem;
+                            }
+                        }
+
+                        &.time, &.price {
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+
+                .book {
+                    background-color: $color-secondary;
+                    padding: .6rem 0;
+                    font-size: .9rem;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews {
+        background-color: $color-white;
+        margin-top: 1rem;
+        padding: 1rem 1.5rem 3rem;
+    }
+
+    .doctor-contacts {
+        padding: .5rem 1.5rem 2rem;
+        background-color: $color-white;
+        position: sticky;
+        top: 85px;
+
+        .contacts {
+            // padding: 0 .5rem;
+    
+            .row {
+                align-items: center;
+                margin-top: 1.5rem;
+    
+                .col-1 {
+                    text-align: center;
+                }
+            }
+    
+            img {
+                height: 1.5rem;
+    
+                &.mail {
+                    height: 1rem;
+                }
+            }
+    
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                // font-weight: 100;
+            }
+        }
+    }
+
+}
+
+.calendar-book {
+
+    .select-btn {
+        text-align: center;
+        margin-top: 1.5rem;
+
+        .btn {
+            background-color: $color-primary;
+            color: $color-white;
+            padding: .5rem 4rem;
+            font-weight: 600;
+            letter-spacing: .5px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

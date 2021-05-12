@@ -1,0 +1,166 @@
+.all-videos {
+    padding-bottom: 1rem;
+    @media (max-width: 991px) {
+        .container {
+            padding: 0;
+        }
+    }
+    .all-videos-container {
+        background-color: $color-white;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @media (max-width: 991px) {
+            padding:1rem
+        }
+        .all-videos-header {
+            .title {
+                font-size: 1.7rem;
+                color: $color-night;
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            .videos-link {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                border:1px solid $color-primary;
+                margin-left: 1.5rem;
+                padding: .7rem 1.5rem;
+                display: inline-block;
+                color: $color-primary;
+                text-decoration: none;
+                border-radius: 3rem;
+                @media (max-width: 991px) {
+                    font-size: .8rem;
+                    white-space: nowrap;
+                    margin-left: 0.5rem;
+                    padding: .5rem;
+                }
+
+            }
+            .videos-link.nuxt-link-active {
+                color: #FFF;
+                background-color: $color-primary;
+
+
+            }
+            .add-video-link-container {
+                margin-right:auto;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                .add-video-link {
+                    padding:.5rem 1.5rem;
+                    font-size: .8rem;
+                    border-radius: 0.5rem;
+                    @media (max-width: 991px) {
+                        white-space: nowrap;
+                        padding: .5rem;
+                    }  
+                    img {
+                        margin-right: .5rem;
+                        width: 1rem;
+                    }
+                }
+            }
+
+        }
+        .cards-container {
+            .single-video-card {
+                box-shadow: 0px 2px 8px #00000022;
+                border-radius: 0.6rem;
+                overflow: hidden;
+                margin-top: 2rem;
+                a {
+                    text-decoration: none;
+                }
+                .video {
+                    position: relative;
+                    .my-edit-edit {
+                        position: absolute;
+                        top: 0.6rem;
+                        right:0.6rem;
+                    }
+                    .embed-responsive {
+                        height: 12rem;
+                    }
+                    .embed-responsive .embed-responsive-item {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    .duration {
+                        background-color: #000;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        padding: .2rem .6rem;
+                        font-size: .75rem;
+                        color: #FFF;
+                    }
+
+
+                }
+            
+                .info {
+
+                    padding: 1rem;
+                    .title {
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: $color-night;
+                        margin: 0;
+                    }
+                    .channel {
+                        align-items: center;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        img {
+                            width: 1.8rem;
+                            height: 1.8rem;
+                            border-radius: 50%;
+                            margin-left: .3rem;
+                        }
+                        .channel-name {
+                            margin:0;
+                            font-size: 0.8rem;
+                            color: $color-night;
+
+                        }
+                    }
+                    .views {
+                        .box {
+                            justify-content: center;
+                            font-size: .7rem;
+                            color: #AFAFAF;
+                            img {
+                                margin-right: .5rem;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}
+.my-video-edit {
+    border: none;
+    box-shadow: 0px 2px 8px #00000022;
+    z-index: 1;
+    a {text-decoration: none;}
+    .box {
+        padding: .5rem;
+        min-width: 10rem;
+        button {
+            align-items: center;
+        }
+        img {margin-right: 0.8rem;}
+        span {
+            color: $color-night;
+        }
+    }
+}

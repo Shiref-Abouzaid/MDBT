@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
+
+// 2. Vendors
+// @import
+//   'vendors/normalize';
+
+// 3. Base stuff
+@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header', 'layout/footer', 'layout/navbar', 'layout/breadcrumb';
+
+// 5. Components
+@import 'components/button';
+@import 'components/arrow';
+@import 'components/paginator';
+@import 'components/sliderThumbnail';
+    //store
+@import 'components/mainCategories';
+@import 'components/offer';
+@import 'components/offerSlider';
+@import 'components/vendor';
+@import 'components//product';
+@import 'components//storeVendor';
+@import 'components/reviews';
+    //restaurants
+@import 'components/restaurant';
+    //partner
+@import 'components/partnerList';
+    //Medical services
+@import 'components/medicalCard';
+@import 'components/medicalThumbnails';
+    //realestate
+@import 'components/realestate';
+    //professions
+@import 'components/profession';
+    //Auction
+@import 'components/auctionCategory';
+@import 'components/auction';
+    //Buy&Sell
+@import 'components/buyCard';
+    //index
+@import 'components/companyCategory';
+@import 'components/company';
+    //car rental
+@import 'components/car';
+    //user
+@import 'components/user';
+    //jobs
+@import 'components/job';
+
+    //loaders
+@import 'components/loaders/productLoader';
+
+
+// 6. Page-specific styles
+@import 'pages/home';
+@import 'pages/wishlist';
+@import 'pages/services';
+@import 'pages/store';
+@import 'pages/product';
+@import 'pages/vendor';
+@import 'pages/restaurants';
+@import 'pages/singleRestaurant';
+@import 'pages/medicalServices';
+@import 'pages/doctors';
+@import 'pages/doctor';
+@import 'pages/clinic';
+@import 'pages/hospital';
+@import 'pages/spas';
+@import 'pages/pharmacy';
+@import 'pages/realestates';
+@import 'pages/singleRealestate';
+@import 'pages/professions';
+@import 'pages/singleProfession';
+@import 'pages/auctions';
+@import 'pages/auction';
+@import 'pages/buySell';
+@import 'pages/singleBuy';
+@import 'pages/companyCategories';
+@import 'pages/companies';
+@import 'pages/company';
+@import 'pages/carRental';
+@import 'pages/carRentalLanding';
+@import 'pages/forms';
+@import 'pages/jobs';
+@import 'pages/job';
+@import 'pages/course';
+
+@import 'pages/search';
+
+@import 'pages/partner';
+@import 'pages/partnerRegister';
+
+@import 'pages/profile';
+
+//outsourced
+@import 'pages/login';
+@import 'pages/my-cart';
+@import 'pages/news';
+
+@import 'pages/checkOut';
+@import 'pages//videos';
+@import 'pages/singleVideo';
+@import 'pages/addVideo';
+
+@import 'layout/socialNavBar';
+@import 'pages/socialProfile';
+@import 'pages/chat';
+@import 'pages/socialAllRooms';
+
+
+
+// 7. Themes
+@import 'themes/default';
+

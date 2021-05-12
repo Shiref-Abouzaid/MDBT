@@ -1,0 +1,88 @@
+.realestates-page {
+    padding-bottom: 2rem;
+
+    .realestates-filter {
+        background-color: $color-white;
+        box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.13);
+        padding: 1rem;
+        border-radius: 8px;
+
+        select {
+            font-size: 1rem;
+            border: 1px solid $color-primary;
+            color: $color-primary;
+
+            background-image: url('/images/icons/svg/select-bottom-arrow.svg');
+            background-repeat: no-repeat, repeat;
+            background-position: left .8rem top 50%, 0 0;
+            // background-size: 2em auto, 100%;
+
+            &:focus {
+                box-shadow: none;
+                border: 1px solid $color-primary;
+            }
+        }
+
+        .chiller_cb {
+
+            label {
+                font-size: .9rem;
+                font-weight: 600;
+                // letter-spacing: .5px;
+            }
+
+            span {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 4px;
+
+                &::before {
+                    top: .75rem;
+                }
+            }
+
+            input:checked ~ span:before {
+                width: .7rem;
+            }
+        }
+
+        .filter-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+
+            .btn {
+                color: $color-white;
+                background-color: $color-secondary;
+                padding: .5rem 3rem;
+                font-size: 1.1rem;
+                // letter-spacing: .5px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .cat-slider {
+        margin-top: 2rem;
+
+        .swiper-wrapper {
+            justify-content: center;
+        }
+    }
+
+    .realestates {
+
+        .realestate {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .paginator {
+        margin-top: 3rem;
+    }
+
+
+}

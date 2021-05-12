@@ -1,0 +1,79 @@
+.cat-slider {
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
+    position: relative;
+    background-color: white;
+    padding: 2rem 0;
+    border-radius: 8px;
+
+    .swiper-container {
+        position: static;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .swiper-button-next {
+        left: 40px;
+        transform: rotate(180deg);
+        @media (max-width: 991px) {
+            left: 0.4rem;
+        }
+    }
+
+    .swiper-button-prev {
+        right: 40px;
+        transform: rotate(180deg);
+        @media (max-width: 991px) {
+            right: 0.4rem;
+        }
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: "";
+    }
+
+    .cat-carousel {
+        width: 80%;
+        margin: 0 auto;
+        @media (max-width: 991px) {
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+         }
+    }
+
+    .cat-carousel .mini-cat {
+        height: 100%;
+        text-align: center;
+    }
+
+    .cat-carousel .mini-cat a:link,
+    .cat-carousel .mini-cat a:visited {
+        color: $color-primary;
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        // font-size: 0.9rem;
+        // font-weight: 400;
+        border: 1px solid $color-primary;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+      }
+
+      .cat-carousel .mini-cat a:hover {
+        background-color: $color-primary;
+        /* border: 1px solid var(--color-primary); */
+        color: $color-white
+      }
+
+      .cat-carousel .mini-cat a.nuxt-link-active {
+        color: $color-white;
+        font-weight: 500;
+        background-color: $color-primary;
+      }
+
+}

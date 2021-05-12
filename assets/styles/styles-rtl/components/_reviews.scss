@@ -1,0 +1,126 @@
+.reviews {  
+
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        @media (max-width: 991px) {
+            font-size: 1rem;
+        }
+    }
+            
+    h6 {
+        margin-bottom: 0;
+        font-weight: 600;
+        @media (max-width: 991px) {
+           margin-bottom: .5rem;
+        }
+    }
+
+    .add-review {
+
+        .row {
+            margin-top: 2rem;
+            text-align: right;
+            @media (max-width: 991px) {
+                margin-top: 1rem;
+            }
+        }
+
+        .btn {
+            background-color: $color-primary;
+            color: $color-white;
+            border-radius: 50px;
+            font-size: .8rem;
+            padding: .4rem 1.5rem;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .prev-reviews {
+        position: relative;
+
+        .review {
+            margin-top: 1.5rem;
+        
+
+            h6 {
+                margin-top: 1.5rem;
+                font-size: .9rem;
+                font-weight: 600;
+            }
+
+            .time {
+                font-size: .75rem;
+                font-weight: 100;
+            }
+
+            .comment {
+
+                > p {
+                    font-size: .9rem;
+                    font-weight: 100;
+                    margin-bottom: 1.5rem;
+                }
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+
+                        .image {
+
+                            display: inline-block;
+                            // padding: .5rem;
+                            width: 2rem;
+                            height: 2rem;
+                            background-color: $color-grey-light-1;
+                            border-radius: 50%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: .5rem;
+
+                            img {
+                                height: 1.1rem;
+                            }
+                        }
+
+                        .count {
+                            font-weight: 100;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .icon:nth-of-type(2) {
+                        margin-left: 3rem;
+                    }
+                }
+            }
+
+        }
+
+        .more {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            cursor: pointer;
+            p {
+                margin-bottom: 0;
+                font-size: .9rem;
+                text-decoration: underline;
+                color: $color-primary;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

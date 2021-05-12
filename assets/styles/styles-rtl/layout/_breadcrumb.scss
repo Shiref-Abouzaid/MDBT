@@ -1,0 +1,47 @@
+.breadcrumb {
+    background: none !important;
+    font-size: .8rem !important;
+    font-weight: 300 !important;
+    margin-bottom: .5rem !important;
+    padding: 1.25rem 0 1rem !important;
+    @media (max-width: 991px) {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .breadcrumb-item {
+        color: $color-primary !important;
+        &:nth-last-child(2) {
+            &::before {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+        }
+        a:link,
+        a:visited {
+            color: $color-black !important;
+            text-decoration: none !important;
+        }
+    }
+
+    .breadcrumb-item + .breadcrumb-item {
+        padding-right: 1rem !important;
+
+        
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "";
+        background-image: url('/images/icons/svg/breadcrumb-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 13px;
+        margin-left: 1rem;
+        transform: rotate(180deg);
+    }
+
+    .active {
+        font-weight: 600 !important;
+    }
+
+}

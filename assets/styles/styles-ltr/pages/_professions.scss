@@ -1,0 +1,50 @@
+.professions-page {
+    padding-bottom: 2rem;
+    @media(max-width: 991px){
+        padding-bottom: 1rem;
+        .container {padding:0}
+    }
+    .professions {
+        padding: 1.2rem 0 3rem;
+        background-color: $color-white;
+        margin-top: 2rem;
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            @media(max-width: 991px){
+                padding-bottom: 0rem;
+            }
+            h3 {
+                margin-bottom: 0;
+                font-weight: 600;
+                letter-spacing: .5px;
+            }
+
+            a:link,
+            a:visited {
+                font-size: 1.2rem;
+                color: $color-primary;
+                text-decoration: underline;
+                letter-spacing: .5px;
+            }
+        }
+
+        .profession-cards {
+            padding: 0 1.5rem;
+            position: relative;
+
+            .swiper-container {
+                position: unset;
+            }
+
+            .medical-card {
+                padding: 1rem .5rem;
+            }
+        }
+    }
+}

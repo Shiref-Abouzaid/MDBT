@@ -1,0 +1,31 @@
+.nav-header {
+    background-color: $color-grey-light-2;
+
+    .nav {
+        font-weight: 600;
+
+        .nav-item:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+
+    .nav-item {
+
+        .nav-link {
+            color: $color-primary;
+            padding: 1.3rem 1rem;
+            transition: all .2s;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-secondary;                
+            }
+        }
+
+        .nav-link.active {
+            color: $color-white;
+            background-color: $color-secondary;
+            text-decoration: underline;
+        }
+    }
+}

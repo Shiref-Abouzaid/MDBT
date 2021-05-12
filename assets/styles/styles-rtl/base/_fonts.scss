@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: helvetica-neun;
+    src: url(~assets/fonts/helveticaneue_regular.ttf);
+}
+
+@font-face {
+    font-family: helvetica-neun;
+    src: url(~assets/fonts/helveticaneue_Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: helvetica-neun;
+    src: url(~assets/fonts/helveticaneue_thin.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: helvetica-neun;
+    src: url(~assets/fonts/helveticaneue_medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: helvetica-neun;
+    src: url(~assets/fonts/helveticaneue_bold.ttf);
+    font-weight: bold;
+}

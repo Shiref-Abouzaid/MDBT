@@ -1,0 +1,157 @@
+.restaurant-page {
+    padding-bottom: 3rem;
+
+    .meals {
+        padding: 1rem 1.5rem 2rem;
+        background-color: $color-white;
+        margin-top: 2rem;
+        @media (max-width: 991px) {
+            padding:1rem
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+                display: flex;
+                align-items: baseline;
+                @media (max-width: 991px) {
+                    width: 100%;
+                    span {
+                        margin-left: auto;
+                    }
+                }
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                    margin-bottom: 0;
+                    @media (max-width: 991px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                span {
+                    margin-left: 2rem;
+                    color: $color-grey-dark;
+                    letter-spacing: .5px;
+                }
+            }
+
+            a:link,
+            a:visited {
+                color: $color-primary;
+                text-decoration: underline;
+                font-size: 1.2rem;
+            }
+        }
+
+        .product {
+            margin-top: 2rem;
+        }
+    }
+
+    .reviews {
+        background-color: $color-white;
+        margin-top: 2rem;
+        padding: 1rem 1.5rem 3rem;
+        @media (max-width: 991px) {
+            padding:1rem;
+            margin-top: 1rem;
+        }
+
+    }
+
+    .vendor-profile {
+        padding: 1rem;
+        background-color: $color-white;
+        position: sticky;
+        top: 85px;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            img {
+                height: 3rem;
+            }
+
+            .name {
+                letter-spacing: 1px;
+                margin-left: 1rem;
+
+                h5 {
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-size: .85rem;
+                    font-weight: 100;
+                    color: $color-grey-dark;
+                }
+            }
+    
+            .rate {
+                color: $color-white;
+                background-color: $color-secondary;
+                padding: .3rem .6rem;
+                border-radius: 4px;
+                font-size: .75rem;
+                margin-left: auto;
+        
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 100;
+        
+                img {
+                    margin-left: .5rem;
+                    height: .75rem;
+                }
+            }
+        }
+
+        hr {
+            border-top: 1px solid rgba(0, 0, 0, 0.18);
+        }
+
+        .contacts {
+            padding: 0 .5rem;
+
+            .row {
+                align-items: center;
+                margin-top: 1.5rem;
+
+                .col-1 {
+                    text-align: center;
+                }
+            }
+
+            img {
+                height: 1.5rem;
+
+                &.mail {
+                    height: 1rem;
+                }
+
+                &.web {
+                    height: 1.2rem;
+                }
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                font-weight: 100;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,137 @@
+.single-job-page {
+    padding-bottom: 2rem;
+
+    .details {
+        padding: 1rem;
+        background-color: $color-white;
+        // margin-top: 2rem;
+
+        .head {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: .5px;
+                margin-bottom: 0;
+            }
+
+            // p {
+            //     margin-bottom: 0;
+            //     font-size: 2rem;
+            //     font-weight: 600;
+            //     color: $color-primary;
+            // }
+        }
+
+        .desc {
+            // margin-top: 1rem;
+
+            .title {
+                margin-top: 1rem;
+
+                h6 {
+                    font-size: .9rem;
+                    color: $color-primary
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                }
+            }
+
+            .job-desc {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .vendor-profile {
+        padding: 1rem;
+        background-color: $color-white;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            img {
+                height: 3rem;
+            }
+
+            .name {
+                letter-spacing: 1px;
+                margin-left: 1rem;
+
+                h5 {
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-size: .85rem;
+                    font-weight: 100;
+                    color: $color-grey-dark;
+                }
+            }
+    
+            .rate {
+                color: $color-white;
+                background-color: $color-secondary;
+                padding: .3rem .6rem;
+                border-radius: 4px;
+                font-size: .75rem;
+                margin-left: auto;
+        
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 100;
+        
+                img {
+                    margin-left: .5rem;
+                    height: .75rem;
+                }
+            }
+        }
+
+        hr {
+            border-top: 1px solid rgba(0, 0, 0, 0.18);
+        }
+
+        .contacts {
+            padding: 0 .5rem;
+
+            .row {
+                align-items: center;
+                margin-top: 1.5rem;
+
+                .col-1 {
+                    text-align: center;
+                }
+            }
+
+            img {
+                height: 1.5rem;
+
+                &.mail {
+                    height: 1rem;
+                }
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                font-weight: 100;
+            }
+        }
+    }
+
+}

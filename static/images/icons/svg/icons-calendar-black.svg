@@ -1,0 +1,15 @@
+<svg id="icons_calendar_black" data-name="icons/calendar/black" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="bounds" width="20" height="20" fill="none"/>
+  <rect id="Rectangle" width="12" height="12" transform="translate(4 5)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot" d="M1.755,1h0" transform="translate(5.245 13.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-2" data-name="dot" d="M1.755,1h0" transform="translate(8.245 13.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-3" data-name="dot" d="M1.755,1h0" transform="translate(11.245 13.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-4" data-name="dot" d="M1.755,1h0" transform="translate(5.245 10.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-5" data-name="dot" d="M1.755,1h0" transform="translate(8.245 10.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-6" data-name="dot" d="M1.755,1h0" transform="translate(11.245 10.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-7" data-name="dot" d="M1.755,1h0" transform="translate(5.245 7.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-8" data-name="dot" d="M1.755,1h0" transform="translate(8.245 7.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="dot-9" data-name="dot" d="M1.755,1h0" transform="translate(11.245 7.053)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="line" d="M1,1.97V0" transform="translate(6 3.03)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="line-2" data-name="line" d="M1,1.97V0" transform="translate(12 3.03)" fill="none" stroke="#2e2e2e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+</svg>

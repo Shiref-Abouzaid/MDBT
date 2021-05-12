@@ -1,0 +1,128 @@
+.car-form,
+.company-form,
+.auction-form,
+.product-form {
+  padding: 4rem;
+}
+.form-content,
+.company-content,
+.auction-content,
+.product-content {
+  background-color: $color-white;
+  padding: 2rem;
+  h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  form {
+    // padding: 2rem;
+    margin-top: 2rem;
+
+    .form-group {
+      // position: relative;
+      margin-top: 0.5rem;
+      .text-field {
+        position: relative;
+        margin: 1rem 0;
+        input {
+          margin-right: 2rem;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+        .label-file {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 1rem 2rem;
+          font-size: 0.8rem;
+          border-radius: 5px;
+          color: $color-white;
+          background-color: $color-secondary;
+        }
+      }
+      .gallery-box {
+        position: relative;
+        width: 6rem;
+        height: 6rem;
+        .gallery {
+          width: 6rem;
+          height: 6rem;
+          background-color: aqua;
+          border-radius: 10px;
+          margin-top: 0.5rem;
+          .image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+
+        }
+        .icon{
+          position: absolute;
+          top: 0;
+          width: 1rem;
+          right: 0;
+        }
+      }
+      label {
+        color: $color-grey-dark-10;
+        font-size: 1.1rem;
+        font-weight: 600;
+        // letter-spacing: 0.5px;
+        // margin-top: 0;
+      }
+      select {
+        background-image: url("/images/icons/svg/icon-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: left 3% top 50%;
+        // color: $color-grey-dark-6;
+      }
+
+      .form-control {
+        background-color: $color-grey-light-3;
+        border: none;
+        // margin-top: .5rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .checkbox {
+      padding: 0 2.8rem;
+      .custom-control {
+        margin: 1rem 0;
+        // padding: 0 4rem;
+        .custom-control-label {
+          font-weight: 600;
+        }
+      }
+    }
+    .btn-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+
+      .car-btn,
+      .company-btn,
+      .auction-btn,
+      .product-btn {
+        padding: 1rem 7.5rem;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        &:focus {
+          box-shadow: none;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
